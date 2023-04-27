@@ -64,6 +64,6 @@ int main() {
     string postfix;
     getline(cin, postfix);
     double res = evaluatePostfix(postfix);
-    cout << "Result: " << res << endl;
+    cout << res << endl;
     return 0;
 }
