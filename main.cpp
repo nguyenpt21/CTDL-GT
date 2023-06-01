@@ -25,12 +25,12 @@ void insert(Node* &root, char c)
     else insert(root->right, c);
 }
 
-void inorderTraversal(Node* root)
+void inorder(Node* root)
 {
     if (root != NULL) {
-        inorderTraversal(root->left);
+        inorder(root->left);
         cout << root->data << ": " << root->count << endl;
-        inorderTraversal(root->right);
+        inorder(root->right);
     }
 }
 
@@ -42,6 +42,6 @@ int main()
     for (int i = 0; i < s.length(); i++) {
         insert(root, s[i]);
     }
-    inorderTraversal(root);
+    inorder(root);
     return 0;
 }
